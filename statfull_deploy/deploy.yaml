@@ -1,0 +1,17 @@
+---
+apiVersion:
+kind:
+metadata:
+  lables:
+    app: backend
+spec:
+  replicas: 3
+  selector:
+    matchLable:
+      app: backend
+  template:
+    metadata:
+      app: backend
+    spec:
+      containers:
+        - name:
